@@ -29,11 +29,10 @@ if(isset($_POST['task'])){
             echo "<td>";
             echo $student['roll'];
             echo "</td>";
-            echo "<td>";
-            echo "<button id='edit' class='buttonReset' name='task' value='edit'>Edit</button> | <button id='edit' class='buttonReset' name='task' value='delete'>Edit</button>";
-            echo "</td>";
             echo "</tr>";
         echo "</tbody>";
         }
+    } else if('submit' == $_POST['task']){
+        print_r($_POST);
     }
 }
