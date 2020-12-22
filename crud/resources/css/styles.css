@@ -1,3 +1,9 @@
-a{
-    color: #599dad;
+.buttonReset{
+    all: unset;
+    color: #9b4dca;
+    cursor: pointer;
+}
+.buttonReset:hover{
+    background-color: transparent;
+    color: #5e2084;
 }

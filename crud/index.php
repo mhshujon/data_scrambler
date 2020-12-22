@@ -1,4 +1,4 @@
-<?php require_once ('functions/crudFunctions.php')?>
+<?php require_once ('functions/dataProcess.php')?>
 <!DOCTYPE HTML>
 <html lang="eng">
 <head>
@@ -8,17 +8,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- <script src="resources/scripts.js"></script> -->
+    <!-- <script src="resources/js/scripts.js"></script> -->
     <link rel="stylesheet" href="crud/resources/css/styles.css">
 </head>
 <body style="margin-top: 100px;">
     <div class="container">
-    <div class="row">
-        <div class="column column-100 column-offset-40">
-            <h1>CRUD Operations</h1>
-            <?php include_once('include/templates/nav.php')?>
+        <div class="row">
+            <div class="column column-100 column-offset-40">
+                <h1>CRUD Operations</h1>
+                <?php include_once('include/templates/nav.php')?>
+            </div>
         </div>
-    </div></div>
-    <script src="resources/scripts.js"></script>
+        <div class="row">
+            <div class="column column-100 column-offset-40">
+                <table id="displayTable"></table>
+            </div>
+        </div>
+    </div>
+    <script src="crud/resources/js/scripts.js"></script>
 </body>
 </html>
